@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bucket-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bucket-app
+    volumes:
+      - ./.oci:/root/.oci:ro
+    environment:
+      - OCI_CONFIG_FILE=/root/.oci/config
+    ports:
+      - "8080:8080" 
+    restart: unless-stopped
