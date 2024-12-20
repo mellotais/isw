@@ -24,7 +24,7 @@ public class Main {
         // Configurações do AutonomousDB
         String jdbcUrl = "jdbc:oracle:thin:@projeto_high?TNS_ADMIN=wallet";
         String dbUser = "ADMIN";
-        String dbPassword = "yUPBKK4Jqh3Le-P";
+        String dbPassword = "";
 
         try {
             // 1. Carregar arquivo no Object Storage
